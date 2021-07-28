@@ -1,0 +1,24 @@
+<div fxLayoutAlign="center center" fxFlexFill class="container">
+    <mat-card fxFlex="30" class="containerbg">
+<form #pensiondetailsform="ngForm" (ngSubmit)="onSubmit(pensiondetailsform.value)" method="GET" name="pension" id="pension">
+    <label for="pensionerName">Name</label>
+    <input type="text" class="form-control" name="pensionerName" ngModel placeholder="username" required=""/>
+    <label for="pan">Pan</label>
+    <input type="text" class="form-control" name="pan" ngModel placeholder="pan" required=""/>
+    <label for="aadharNumber">Aadhaar</label>
+    <input type="text" class="form-control" name="aadharNumber" ngModel placeholder="aadhar" required=""/>
+    <label for="pensionerDob">Date</label>
+    <input type="date" class="form-control" name="pensionerDob" ngModel placeholder="date" required=""/>
+    <label for="pensionType">Pension type</label>&nbsp;&nbsp;
+    <mat-form-field>
+        <mat-label>PensionType</mat-label>
+        <mat-select>
+          <mat-option value="Family">Family pension</mat-option>
+          <mat-option value="Self">Self pension</mat-option>
+        </mat-select>
+      </mat-form-field>
+    <br>
+    <button type="submit" value="Submit" class="btn btn-info">Submit</button>
+</form>
+</mat-card>
+</div>
