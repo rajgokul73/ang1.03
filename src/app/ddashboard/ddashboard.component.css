@@ -1,0 +1,10 @@
+.container{
+    background-image: url(https://img.freepik.com/free-photo/old-couple-figure-standing-top-coin-stack_86691-64.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerbg{
+    background-color:gray;
+    position: inherit;
+    padding: 30px;
+}

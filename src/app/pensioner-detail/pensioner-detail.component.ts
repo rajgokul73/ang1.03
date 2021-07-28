@@ -23,6 +23,7 @@ export class PensionerDetailComponent implements OnInit {
   message:any
   Message:boolean
   updatedPensionerDetails:any
+  error:boolean = false;
   constructor(private router:Router,private pensionerDetailService:PensionerDetailService,private pensionDisbursementService:PensionDisbursementService) { }
 
   ngOnInit(): void {
@@ -68,11 +69,16 @@ export class PensionerDetailComponent implements OnInit {
                }
       }  ,
       (error )=>{
+        this.error=true;
         console.log(error.error.message)
-        if(error.error.message==null){
-          this.message="Please fill all the fields"
+
+         
+
+          this.message=error.error.message;
           this.Message=false;
-        }
+          
+          
+         
       }
       )
     }

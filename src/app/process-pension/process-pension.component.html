@@ -1,11 +1,17 @@
-<p>process-pension works!</p>
+
 <!-- <h3 ng-If="sucess_code"> sucess_code => {{sucess_code}}</h3> -->
-<div [hidden]="sucess">
-    <h1>congrats</h1>
+<!-- <div [hidden]="sucess"> -->
+<div >
+    <mat-card>
+        <mat-card-content>Congrats your pension process is Sucessfull !. Have a Great Day !! </mat-card-content>
+    </mat-card>
 
 </div>
 <div [hidden]="fail">
-    <h1>sorry</h1>
+    
+    <mat-card>
+        <mat-card-content>Sorry!, Your Pension process has been Declined. Please Redo the process or Try again after some time.</mat-card-content>
+    </mat-card>
 
 </div>
 

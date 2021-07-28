@@ -5,21 +5,25 @@
     
     <mat-card fxFlex="30" class="containerbg">
         
-            <form (ngSubmit)="onSubmit()" class="form">
+            <form (ngSubmit)="onSubmit()" class="form" ngNativeValidate>
             <div class="col-md-12">
             
             <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" name="userName" [(ngModel)]="credentials.userName" placeholder="username" required=""/>
+            <input type="text" class="form-control" name="userName" [(ngModel)]="credentials.userName" placeholder="username" required/>
             </div> 
             <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control"  name="password" [(ngModel)]="credentials.password" placeholder="password" required=""/>
+            <input type="password" class="form-control"  name="password" [(ngModel)]="credentials.password" placeholder="password" required/>
             </div>
-            <p *ngIf="error" class="error">
-                <span>Invalid Username or password</span>
-                <!-- {{ error }} -->
-            </p>
+            
+                <p *ngIf="error" class="error" >
+                    <mat-card class="warn">
+                    <span class="text">{{errormessage}}</span>
+                    <!-- {{ error }} -->
+                </mat-card>
+                </p>
+            
             <div class="form-group">
             <button type="submit" class="btn btn-info">Login</button>&nbsp;&nbsp;
             <button type="reset" class="btn btn-info">reset</button>

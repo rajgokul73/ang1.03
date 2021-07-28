@@ -4,6 +4,7 @@
     background-size: cover;
 }
 .containerbg{
-    background-image: linear-gradient(to left, rgba(223, 207, 207, 0), rgb(68, 61, 61));
+    background-color:gray;
+    position: inherit;
     padding: 30px;
 }

@@ -13,17 +13,17 @@ export class AuthorizationComponent implements OnInit {
     
     password:"",
     userName:"" 
-     
+
   }
-  @Input() error: string | null;
-  
+  error: boolean;
+  errormessage: any;
   constructor(private loginService:AuthorizationService) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(){
-    console.log("form submitted");
+    
     if((this.credentials.userName!='' && this.credentials.password!='') && 
     (this.credentials.userName!=null && this.credentials.password!=null)){
       this.loginService.generateToken(this.credentials).subscribe(
@@ -36,9 +36,11 @@ export class AuthorizationComponent implements OnInit {
           window.location.href="/pensiondetails";
         },
         error =>{
-          console.log("error");
-          console.log(error);
-          
+          this.error=true;
+          // console.log("error");
+          // console.log(error);
+          this.errormessage=error.error.message;
+          console.log(this.errormessage);
         }
       );
     }

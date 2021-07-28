@@ -1,4 +1,4 @@
-<p>ddashboard works!</p>
+
 <!--
 <div class="bootstarp-wrapper">
     <div class="container text-center mt">
@@ -43,15 +43,21 @@
     
 </div>
 -->
-
+<div fxLayoutAlign="center center" fxFlexFill class="container">
+    <mat-card fxFlex="30" class="containerbg">
 
     <div class="form-group">
+        <label for="aadhaarNumber">Aadhar Number</label>
         <input type="text" class="form-control" name="aadharNumber" [(ngModel)]="ProcessPensionInput.aadharNumber" placeholder="aadharNumber" required=""/>
     </div> 
     <div class="form-group">
+        <label for="pensionAmount">Pension Amount</label>
         <input type="text" class="form-control" name="pensionAmount" [(ngModel)]="ProcessPensionInput.pensionAmount" placeholder="pensionAmount" required=""/>
     </div> 
     
     <h2> <button type="submit" (click)="process()" class="btn btn-info">processPension</button></h2>
+    
+    </mat-card>
+    </div>
        
        
