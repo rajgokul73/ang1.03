@@ -1,5 +1,6 @@
 <div fxLayoutAlign="center center" fxFlexFill class="container">
     <mat-card fxFlex="30" class="containerbg">
+        <mat-card-title class="flexfill">Pension Details Form</mat-card-title>
 <form #pensiondetailsform="ngForm" (ngSubmit)="onSubmit(pensiondetailsform.value)" method="GET" name="pension" id="pension" ngNativeValidate>
     <label for="pensionerName">Name</label>
     <input type="text" class="form-control" name="pensionerName" ngModel placeholder="username" required=""/>
@@ -10,6 +11,7 @@
     <label for="pensionerDob">Date</label>
     <input type="date" class="form-control" name="pensionerDob" ngModel placeholder="date" required=""/>
     <br>
+    <label for="pensionType">Pension Type</label><br>
      <mat-form-field appearance="fill">
         <mat-label>PensionType</mat-label>
         <mat-select name="pensionType" id="typeOfPension" ngModel>
@@ -23,7 +25,10 @@
         <!-- {{ error }} -->
     </mat-card>
     </p>
-    <button type="submit" value="Submit" class="btn btn-info">Submit</button>
+    <br>
+    <div class="flexfill">
+    <button mat-raised-button type="submit" value="Submit" class="btn btn-info">Submit</button>
+</div>
 </form>
 </mat-card>
 </div>

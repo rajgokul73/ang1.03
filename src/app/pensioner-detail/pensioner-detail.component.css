@@ -8,3 +8,15 @@
     position: inherit;
     padding: 30px;
 }
+.warn{
+    background-color: red;
+}
+.text{
+    color: white;
+}
+.flexfill {
+    display: flex;
+    justify-content: center;
+    color: honeydew;
+  }
+  

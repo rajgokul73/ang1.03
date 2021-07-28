@@ -54,9 +54,9 @@
         <label for="pensionAmount">Pension Amount</label>
         <input type="text" class="form-control" name="pensionAmount" [(ngModel)]="ProcessPensionInput.pensionAmount" placeholder="pensionAmount" required=""/>
     </div> 
-    
-    <h2> <button type="submit" (click)="process()" class="btn btn-info">processPension</button></h2>
-    
+    <div class="flexfill">
+    <h2> <button mat-raised-button type="submit" (click)="process()" class="btn btn-info">processPension</button></h2>
+</div>
     </mat-card>
     </div>
        
