@@ -1,9 +1,79 @@
-.container{
-    background-image: url(https://img.freepik.com/free-photo/old-couple-figure-standing-top-coin-stack_86691-64.jpg?size=626&ext=jpg);
+ .container{
+    background-image: url(https://foh.psc.gov/eapnews/consortium/images/resilience.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container1{
+    background-image: url(https://wallpaperaccess.com/full/1707976.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+/*
 .containerbg{
     background-image: linear-gradient(to left, rgba(223, 207, 207, 0), rgb(68, 61, 61));
     padding: 30px;
 }
+.flexfill {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  } */
+
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 31ch;
+    animation: typing 2s steps(31);
+    white-space: nowrap;
+    overflow: inherit;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color:blue;
+  }
+  .typing-demo2 {
+    width: 35ch;
+    animation: typing 2s steps(35), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: inherit;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: blue;
+  }
+  .wrapper1 {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo1 {
+    width: 82ch;
+    animation: typing 2s steps(82), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: inherit;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: blue;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

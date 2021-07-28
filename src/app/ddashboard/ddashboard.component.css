@@ -13,3 +13,11 @@
     justify-content: center;
     color: honeydew;
   }
+  .flexfill2 {
+    display: flex;
+    justify-content: center;
+    color: red;
+  }
+  .whitebg{
+      background-color: white;
+  }

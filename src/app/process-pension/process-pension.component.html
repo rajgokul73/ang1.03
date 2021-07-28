@@ -1,18 +1,25 @@
-
-<!-- <h3 ng-If="sucess_code"> sucess_code => {{sucess_code}}</h3> -->
-<div [hidden]="sucess"> 
-<div >
-    <mat-card>
-        <mat-card-content>Congrats your pension process is Sucessfull !. Have a Great Day !! </mat-card-content>
-    </mat-card>
-
-</div>
-</div>
-<div [hidden]="fail">
+<div [hidden]="sucess" class="container"> 
+    <div >
+        <div class="wrapper">
+            <div class="typing-demo">
+                Congrats ,Your pension process   
+            </div>
+            <div class="typing-demo2">
+                is Sucessfull, Have a Great Day !!
+            </div>
+        </div>
     
-    <mat-card>
-        <mat-card-content>Sorry!, Your Pension process has been Declined. Please Redo the process or Try again after some time.</mat-card-content>
-    </mat-card>
+    </div>
+    </div>
+    <div [hidden]="fail" class="container1">
+        
+        <div class="wrapper1">
+            <div class="typing-demo1">
+                Sorry!, Your Pension process has been Declined. <br>
+                Please Redo the process or Try again after some time.
+            </div>
+        </div>
+    
+    </div>
 
-</div>
-
+    

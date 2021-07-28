@@ -29,6 +29,7 @@ export class ProcessPensionComponent implements OnInit {
         this.sucess_code=response;
         console.log(response);
       },
+      
       error=>{
         console.log(error);
       }
