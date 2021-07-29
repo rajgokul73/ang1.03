@@ -1,5 +1,5 @@
  .container{
-    background-image: url(https://foh.psc.gov/eapnews/consortium/images/resilience.jpg);
+    background-image: url(https://ak.picdn.net/shutterstock/videos/4055689/thumb/8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8,28 +8,18 @@
     background-repeat: no-repeat;
     background-size: inherit;
 }
-/*
-.containerbg{
-    background-image: linear-gradient(to left, rgba(223, 207, 207, 0), rgb(68, 61, 61));
-    padding: 30px;
-}
-.flexfill {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  } */
 
   .wrapper {
     height: 100vh;
-    /*This part is important for centering*/
+     /*This part is important for centering*/
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .typing-demo {
-    width: 31ch;
-    animation: typing 2s steps(31);
+    width: 41ch;
+    animation: typing 2s steps(41);
     white-space: nowrap;
     overflow: inherit;
     border-right: 3px solid;

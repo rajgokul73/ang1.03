@@ -23,7 +23,6 @@ import { PensionerDetailService } from 'src/services/pensioner-detail.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { LogoutComponent } from './logout/logout.component';
 import { HeaderComponent } from './header/header.component';
 import { MatSelectModule } from '@angular/material/select';
 
@@ -35,7 +34,6 @@ import { MatSelectModule } from '@angular/material/select';
     DdashboardComponent,
     ProcessPensionComponent,
     PensionerDetailComponent,
-    LogoutComponent,
     HeaderComponent,
     
 

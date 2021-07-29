@@ -35,15 +35,4 @@ export class ProcessPensionComponent implements OnInit {
       }
     )
   }
-//   onSubmit(){
-//     this.ProcessPension.PensionDetails(this.pensionerDetails).subscribe(
-//       response=>{
-//         this.sucess_code=response;
-//         console.log(response);
-//       },
-//       error=>{
-//         console.log(error);
-//       }
-//     )
-//   }
  }

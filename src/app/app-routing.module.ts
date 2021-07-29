@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from 'src/services/auth.guard';
 import { AuthorizationComponent } from './authorization/authorization.component';
 import { DdashboardComponent } from './ddashboard/ddashboard.component';
-import { LogoutComponent } from './logout/logout.component';
 import { PensionerDetailComponent } from './pensioner-detail/pensioner-detail.component';
 import { ProcessPensionComponent } from './process-pension/process-pension.component';
 
@@ -31,12 +30,7 @@ const routes: Routes = [
     pathMatch:"full",
     canActivate:[AuthGuard],
   },
-  {
-    path:"logout",
-    component: LogoutComponent,
-    pathMatch:"full",
-    canActivate:[AuthGuard],
-  },
+
   
 ];
 

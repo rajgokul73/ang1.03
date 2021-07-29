@@ -37,27 +37,6 @@ export class DdashboardComponent implements OnInit {
     this.router.navigate(["/processPension"]);
   }
 
-  /*
-  onProcessPension(){
-    console.log("ProcessPension",this.ProcessPensionInput);
-    this.pension_disbursement.processPension(this.ProcessPensionInput).subscribe(
-      processCode=>{console.log(processCode);
-        this.ProcessCode=processCode;
-      },
-      error=>{console.log(error);
-      }
-    );
-  }
-  ongetBankServiceCharge(){
-    console.log("BankServiceCharge",this.bankName);
-    this.pension_disbursement.getBankServiceCharge(this.bankName).subscribe(
-      bankServiceCharge=>{console.log(bankServiceCharge);
-        this.bankServiceCharge=bankServiceCharge;
-      },
-      error=>{console.log(error);
-      }
-    );
-  }
-  */
+
 
 }
