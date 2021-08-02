@@ -8,6 +8,7 @@ import { PensionerInpu } from 'src/app/model/pensioner-inpu';
 export class PensionerDetailService {
 
   pension_details_URL="http://localhost:8000/process-pension"
+  
   constructor(private http:HttpClient) { }
   PensionDetails(pensionerinput:any){
    
